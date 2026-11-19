@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 
 load_dotenv()  # reads your key from the .env file
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-MODEL = "gemini-flash-latest"  # <- change this to the model name you saw in AI Studio
+MODEL = "gemini-3.5-flash-lite"  # <- change this to the model name you saw in AI Studio
 
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 

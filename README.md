@@ -36,7 +36,13 @@ Q: Does this policy cover space travel?
 A: I could not find this in the policy.
 
 ## Results
-(I will add my accuracy numbers here after testing.)
+I tested the assistant on 13 questions. I wrote the correct answers by reading the policy PDF myself.
+
+- 12 of 13 correct after manual review. The automatic score was 11 of 13, because one answer said "fifteen days" and my checker looked for "15 days".
+- 3 of 3 questions that the policy cannot answer were handled correctly. The assistant said "I could not find this in the policy" every time.
+- 1 real failure: the Worldwide Cover co-payment (10%, Page 21). The search step missed the right text, so the assistant said it could not find the answer.
+
+Next step: retrieve more chunks per question and test again.
 
 ## Limitations and next steps
 - Works best on text PDFs, not scanned images
